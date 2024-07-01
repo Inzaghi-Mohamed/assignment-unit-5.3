@@ -25,7 +25,7 @@ console.log('***** Music Collection *****')
 
   console.log(addToCollection(myCollection,'Thriller', 'Michael Jackson', 1982 ));
 
-  console.log(myCollection) // Contains one element which is an object
+  console.log(myCollection) // Contains one element which is an object at this point!
    
   console.log('*****') // console divider
 
