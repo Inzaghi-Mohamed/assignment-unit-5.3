@@ -43,7 +43,16 @@ console.log('***** Music Collection *****')
   console.log('*****') // console divider
 
   
-  // Test the findByArtist function
+  // Create ShowCollection function
+   function showCollection(collection){
+    for(const album of collection){
+      console.log(`${album.title} by ${album.artist} published in ${album.yearPublished}`);
+    }
+   }
+
+  //  Test the ShowCollection function
+  console.log('Showing the entire collection:');
+  showCollection(myCollection);
 
 
 
