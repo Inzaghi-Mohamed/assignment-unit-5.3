@@ -1,6 +1,52 @@
 console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
 
+  //  *** SOLUTION ***
+
+  // 1. create an empty array, " myCollection";
+
+  const myCollection = [];
+
+  // 2. Create addToCollection function;
+    
+  function addToCollection(Collection, title, artist, yearPublished){
+    const newAlbum ={
+      title :title,
+      artist:artist,
+     yearPublished:yearPublished
+    };
+    Collection.push(newAlbum);
+    return newAlbum;
+    
+  }
+  console.log(myCollection) // Still an empty array 
+
+  // 3.Using and testing the addToCollection function;
+
+  console.log(addToCollection(myCollection,'Thriller', 'Michael Jackson', 1982 ));
+
+  console.log(myCollection) // Contains one element which is an object
+   
+  console.log('*****') // console divider
+
+  console.log(addToCollection(myCollection,'Hotel California', 'Eagles', 1976 ));
+  console.log(addToCollection(myCollection,'Jecel', 'Suldan Seraar', 2020 ));
+  console.log(addToCollection(myCollection,'Dogoney', 'Hassan Samtar', 2023 ));
+  console.log(addToCollection(myCollection,'Liin Macan', 'Ahmed Xariir', 2021 ));
+  console.log(addToCollection(myCollection,'Yawaye', 'Farhiya',2020));
+
+  console.log('*****') // console divider
+
+  console.log(myCollection); // contains 6 elements of 'objects'
+  console.log(myCollection[1].artist); // Eagles
+
+  console.log('*****') // console divider
+
+  
+  // Test the findByArtist function
+
+
+
 
 
 
