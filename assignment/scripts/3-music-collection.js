@@ -54,6 +54,26 @@ console.log('***** Music Collection *****')
   console.log('Showing the entire collection:');
   showCollection(myCollection);
 
+  // Create the findByArtist function
+  function findByArtist(collection, artist){
+    function isArtistMatch (album){
+      return album.artist.toLowerCase() === artist.toLowerCase();
+    }
+    return collection.filter(isArtistMatch);
+  }
+
+  // Test the findByArtist function
+  console.log('Finding albums by Michael Jackson:');
+  console.log(findByArtist(myCollection, 'Michael Jackson'))
+  // Test findArtist with multiple matches?
+  // Added another album first;
+
+  addToCollection(myCollection, 'Bad', 'Michael jackson', 1987);
+  
+  //Check
+  console.log('Finding all Michael Jackson albums:');
+  console.log(findByArtist(myCollection, 'Michael Jackson'));
+
 
 
 
